@@ -1,0 +1,116 @@
+// Only necessary change from a UX perspective
+.shareUrl-input {
+    cursor: pointer;
+}
+
+/* Stylistic Changes
+=================== */
+// fonts
+$font-sans: -apple-system,BlinkMacSystemFont,"Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
+$font-code: Menlo, Monaco, "Courier New", Courier, monospace;
+// colors
+$background: linear-gradient(to bottom right);
+$highlight-color: rgba(116,201,71,.8);
+$transparent: rgba(0,0,0,0);
+$white: #fff;
+$body-color: black;
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+}
+body,
+.wrapper,
+.content {
+    min-height: 0vh;
+}
+
+}
+.wrapper {
+    background: $background;
+}
+p {
+    line-height: 1.3;
+}
+
+// Share URL Component
+   .shareUrl {
+       width: 100%;
+       padding: 40px 20px;
+       text-align: center;
+   }
+.shareUrl-header {
+    margin-bottom: 40px;
+}
+.shareUrl-headerText {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.shareUrl-subtext {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.shareUrl-body {
+    margin-bottom: 0px;
+}
+.shareUrl-input {
+    width: 100%;
+    padding: 10px 0;
+    border: 2px solid rgba(0,0,0,.09);
+    text-align: center;
+    font-size: 26px;
+    font-weight: ;
+    color: black;
+    background: $transparent;
+    border-radius: 10px;
+    transition: all 300ms ease;
+
+&:hover,
+&:focus,
+&:active {
+     border-color: rgba(0,0,0,.3);
+     background: rgba(255,255,255,.1);
+ }
+}
+
+// Media Queries
+@media (min-width: 568px) {
+    .shareUrl {
+        padding: 70px 20px;
+    }
+    .shareUrl-input {
+        max-width: 100%;
+        font-size: 56px;
+    }
+    .shareUrl-headerText {
+        font-size: 32px;
+    }
+}
+
+// Helpers
+   .u-verticalGrid {
+       display: flex;
+       flex-flow: column wrap;
+   }
+.u-flexCenter {
+    display: flex;
+    align-items: center !important;
+}
+.u-flexCenterHorizontal {
+    display: flex;
+    justify-content: center !important;
+}
+.u-sizeViewHeightMin100 {
+    min-height: 50vh !important;
+}
+.u-size1040 {
+    max-width: 1040px;
+}
+.u-marginAuto {
+    margin: 0 auto;
+}

@@ -1,6 +1,6 @@
-<x-adminlink/>
+<x-homelink/>
 
-    <body class="main-body">
+    <body class="main-body dark-theme">
 
         <!-- Loader -->
         <div id="global-loader">
@@ -15,8 +15,8 @@
                 <div class="wd-md-50p login d-none d-md-block page-signin-style p-5 text-white" >
                     <div class="my-auto authentication-pages">
                         <div>
-                            <img src="admin/assets/img/brand/logo-white.png" class=" m-0 mb-4" alt="logo">
-                            <h5 class="mb-4">Responsive Modern Dashboard &amp; Admin Template</h5>
+                            <img src="home/assets/img/brand/logo-white.png" class=" m-0 mb-4" alt="logo">
+                            <h5 class="mb-4">Responsive Modern Dashboard &amp; home Template</h5>
                             <p class="mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
                             <a href="index.html" class="btn btn-success">Learn More</a>
                         </div>
@@ -25,7 +25,7 @@
                 <div class="sign-up-body wd-md-50p">
                     <div class="main-signin-header">
                         <h2>Welcome here!</h2>
-                        <h4>Please Register with Azira</h4>
+                        <h4>Please Register with D2D</h4>
                         <form method="POST" action="{{ route('register') }}">
                           @csrf
                             <div class="form-group">
@@ -57,4 +57,53 @@
                                 @enderror
                             </div>
                     <div class="form-group ">
-    
+                        <label>{{ __('Confirm Password') }}</label>
+
+                       
+                            <input id="password-confirm" type="password" placeholder="password_confirmation" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                       
+                    </div>
+
+                    <div class="form-group row mb-0">
+                        <div class="col-md-6 offset-md-4">
+                            <button type="submit" class="btn btn-primary">
+                                {{ __('Register') }}
+                            </button>
+                        </div>
+                    </div>
+                        </form>
+                    </div>
+                    <div class="main-signup-footer mg-t-10">
+                        <p>Already have an account? <a href="{{ route('login') }}">Sign In</a></p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--- JQuery min js --->
+        <script src="home/assets/plugins/jquery/jquery.min.js"></script>
+
+        <!--- Bootstrap Bundle js --->
+        <script src="home/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!--- Ionicons js --->
+        <script src="home/assets/plugins/ionicons/ionicons.js"></script>
+
+        <!--- Moment js --->
+        <script src="home/assets/plugins/moment/moment.js"></script>
+
+        <!--- Eva-icons js --->
+        <script src="home/assets/js/eva-icons.min.js"></script>
+
+        <!--- Rating js --->
+        <script src="home/assets/plugins/rating/jquery.rating-stars.js"></script>
+        <script src="home/assets/plugins/rating/jquery.barrating.js"></script>
+
+        <!--- JQuery sparkline js --->
+        <script src="home/assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+        <!--- Custom js --->
+        <script src="home/assets/js/custom.js"></script>
+    </body>
+</html>

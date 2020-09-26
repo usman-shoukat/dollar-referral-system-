@@ -1,17 +1,18 @@
 
-		<!-- Loader -->
-		<div id="global-loader">
-			<img src="admin/assets/img/loaders/loader-4.svg" class="loader-img" alt="Loader">
-		</div>
-		<!-- /Loader -->
+		
 
 		<!-- main-sidebar opened -->
 		<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
 		<aside class="main-sidebar app-sidebar sidebar-scroll">
 			<div class="main-sidebar-header">
-				<a class="desktop-logo logo-light active" href="index.html" class="text-center mx-auto"><img src="home/assets/img/brand/logo.png" class="main-logo"></a>
+				
 				<a class="desktop-logo icon-logo active"href="index.html"><img src="home/assets/img/brand/favicon.png" class="logo-icon"></a>
-				<a class="desktop-logo logo-dark active" href="index.html"><img src="home/assets/img/brand/logo-white.png" class="main-logo dark-theme" alt="logo"></a>
+
+
+				<a class="active" style="margin-left: 25px;" href="{{route('dashboard')}}"><img height="60px" src="home/assets/img/brand/logo-white.png" alt="logo"></a>
+
+
+
 				<a class="logo-icon mobile-logo icon-dark active" href="index.html"><img src="home/assets/img/brand/favicon-white.png" class="logo-icon dark-theme" alt="logo"></a>
 			</div><!-- /logo -->
 			<div class="main-sidebar-loggedin">
@@ -101,9 +102,10 @@
 						
 					</li>
 					<li class="slide">
-						<a class="side-menu__item"  href="{{asset('withdraw')}}"><i class="side-menu__icon fe fe-box"></i><span class="side-menu__label">Withdraw Transactions</span></a>
+						<a class="side-menu__item"  href="{{asset('withdrawtransaction')}}"><i class="side-menu__icon fe fe-box"></i><span class="side-menu__label">Withdraw Transactions</span></a>
 						
 					</li>
+					
 					<li class="slide">
 						<a href="https://wa.link/gj32hb" class="material-icons floating-btn"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
 

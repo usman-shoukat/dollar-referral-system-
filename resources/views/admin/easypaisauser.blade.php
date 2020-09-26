@@ -2,7 +2,7 @@
 <x-adminlinkbar/>
 <!-- left sidebar -->
 <!-- ============================================================== -->
-<x-adminsidebar/>
+<x-pxadminsidebar/>
 <!-- ============================================================== -->
 <!-- end left sidebar -->
 
@@ -29,12 +29,148 @@
             <!-- ============================================================== -->
             <div class="ecommerce-widget">
 
-                <div class="row">
+                <!-- row -->
+                <div class="row row-sm">
+                    <div class="col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="">Perfect Money</div>
+                                        <br>
+                                         <?php  $Bitcoin1 = 'perfectmoney'  ?>
+                                         <a href="{{route('adminwithdraw',['apply' => $Bitcoin1])}}"><img width="150px"  src="assets/img/8d85d6c8-7ab5-4de9-aec7-2e647cb6a975.jpg" style="border-radius: 10px;"></a>
+                                        
 
-
-
-
+                                      
+                                    </div>
+                                    
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="">Bitcoin</div>
+                                        <br>
+                                            <?php  $Bitcoin = 'Bitcoin'  ?>
+                                         <a href="{{route('adminwithdraw',['apply' => $Bitcoin])}}"><img width="150px"  src="assets/img/4a08bf7f-97d3-4bca-87b2-dac1667284bc.jpg" style="border-radius: 10px;"></a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="">AdvCash</div>
+                                        <br>
+                                            <?php  $AdvCash = 'AdvCash'  ?>
+                                         <a href="{{route('adminwithdraw',['apply' => $AdvCash])}}"><img width="150px"  src="assets/img/ab8926f7-d462-4706-b252-2bb1e0982bfb.jpg" style="border-radius: 10px;"></a>
+                                    </div>
+                                    
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="">Cash Maal</div>
+                                        <br>
+                                            <?php  $CashMaal = 'CashMaal'  ?>
+                                         <a href="{{route('adminwithdraw',['apply' => $CashMaal])}}"><img width="150px"  src="assets/img/ce118dda-965b-438d-96fe-e17f33edbf21.jpg" style="border-radius: 10px;"></a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- /row -->
+                <br><br><br>
+                    <!-- row -->
+                <div class="row row-sm">
+                    <div class="col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="">Jazz Cash</div><br>
+                                            <?php  $Jazz = 'Jazz'  ?>
+                                         <a href="{{route('adminwithdraw',['apply' => $Jazz])}}"><img width="150px"  src="assets/img/5eef39b0-ad6a-435e-b0e4-0d645a8ddead.jpg" style="border-radius: 10px;"></a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="">Easy Paisa</div><br>
+                                            <?php  $Paisa = 'Paisa'  ?>
+                                         <a href="{{route('adminwithdraw',['apply' => $Paisa])}}"><img width="150px" src="assets/img/2e723b53-4070-420b-825c-cc0c05e285ff.jpg" style="border-radius: 10px;"></a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="">Skrill</div><br>
+                                            <?php  $Skrill = 'Skrill'  ?>
+                                        <a href="{{route('adminwithdraw',['apply' => $Skrill])}}"> <img  width="150px" src="assets/img/6a427d37-d42d-48c0-b6d4-abb6772b26c8.jpg" style="border-radius: 10px;"></a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                        <div class="col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="">Payeer</div><br>
+                                            <?php  $Payeer = 'Payeer'  ?>
+                                         <a href="{{route('adminwithdraw',['apply' => $Payeer])}}"><img width="150px" src="assets/img/9026797d-74a9-4782-bb5b-c7fe2285f1c6.jpg" style="border-radius: 10px;"></a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- /row -->
+
+            
+
+            
                 <div class="row">
                     <!-- ============================================================== -->
 
@@ -42,50 +178,7 @@
 
                     <!-- recent orders  -->
                     <!-- ============================================================== -->
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="card">
-                            <h5 class="card-header">All EasyPaisa Accounts ( {{ $EasyPaisausercount }})</h5>
-
-                            <div class="card-body p-0">
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <thead class="bg-light">
-                                        <tr class="border-0">
-                                            <th class="border-0">Id</th>
-                                            <th class="border-0">Email</th>
-                                            <th class="border-0">Platform</th>
-                                            <th class="border-0">Trasactions Id</th>
-                                            <th class="border-0">Amount</th>
-                                            <th class="border-0">Reject</th>
-                                            <th class="border-0">Approval</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        @foreach ($EasyPaisauser as $getalladmins)
-                                            <tr>
-                                                <td>{{$getalladmins->id}}</td>
-                                                <td>{{$getalladmins->email}}</td>
-                                                <td>{{$getalladmins->platform}}</td>
-                                                <td>{{$getalladmins->image}}</td>
-                                                <td>5$</td>
-                                                <td>
-                                                    <a href="{{ route('rejectpaisa', [$getalladmins->id]) }}"> <button type="submit"  class="btn btn-danger">Reject</button></a>
-
-                                                </td>
-                                                <td>
-
-                                                    <a href="{{ route('apppaisa', [$getalladmins->id]) }}"><button type="submit" class="btn btn-success">Approval</button></a>
-
-                                                </td>
-                                            </tr>
-                                        @endforeach
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
                     <!-- ============================================================== -->
                     <!-- end recent orders  -->
 
@@ -101,5 +194,5 @@
                 <!-- ============================================================== -->
             </div>
 
-            <x-adminfooter/>
+            <x-pxadminfooter/>
 

@@ -34,12 +34,12 @@
 <!-- ============================================================== -->
 <div class="splash-container">
     <div class="card ">
-        <div class="card-header text-center"><a href="/admin/penal"><a class="navbar-brand" href="/admin/penal">GotJobPak</a></a><span class="splash-description">Please enter your admin information.</span></div>
+        <div class="card-header text-center"><a href="/admin/penal"><a class="navbar-brand" href="/admin/penal">PX DOLLAR</a></a><span class="splash-description">Please enter your admin information.</span></div>
         <div class="card-body">
             <form  method="POST" action="{{ route('admin.login') }}" >
                 @csrf
                 <div class="form-group">
-                    <input class="form-control form-control-lg @error('email') is-invalid @enderror" name="email" required value="{{ old('email') }}">
+                    <input class="form-control form-control-lg @error('email') is-invalid @enderror" type="email" name="email" required value="{{ old('email') }}">
                 </div>
                 @error('email')
                 <span class="invalid-feedback" role="alert">
@@ -47,7 +47,7 @@
                                     </span>
                 @enderror
                 <div class="form-group">
-                    <input class="form-control form-control-lg  @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" >
+                    <input class="form-control form-control-lg  @error('password') is-invalid @enderror" type="password" name="password" required autocomplete="current-password" >
                 </div>
 
                 @error('password')

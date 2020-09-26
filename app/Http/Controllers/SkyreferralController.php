@@ -89,7 +89,7 @@ class SkyreferralController extends Controller
      $createdUser = $this->user->create($userData);
 
      if ($userref) {
-         $this->skyreferral->create(['user_id' => $createdUser->id, 'referred_by_id' => $urlid]);
+         $this->userreferral->create(['user_id' => $createdUser->id, 'referred_by_id' => $urlid,  'pack_name' => 'sky', 'ref_o' => 1, 'ref_s' => 1]);
      }
      return redirect()->route('login');
         }

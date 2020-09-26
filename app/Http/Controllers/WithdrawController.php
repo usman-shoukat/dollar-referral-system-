@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Withdraw;
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class WithdrawController extends Controller
 {
@@ -22,6 +23,8 @@ class WithdrawController extends Controller
     }
     public function withdrawsuccess()
     {
+
+
         return view('withdrawsuccess');
     }
 
@@ -74,9 +77,10 @@ class WithdrawController extends Controller
      * @param  \App\Models\Withdraw  $withdraw
      * @return \Illuminate\Http\Response
      */
-    public function show(Withdraw $withdraw)
+    public function withdrawtransaction()
     {
-        //
+        
+        return view('withdrawtransaction');
     }
 
     /**

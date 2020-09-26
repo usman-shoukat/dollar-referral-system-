@@ -112,7 +112,7 @@
                                         <span class="label">PROFIT</span>
                                     </span>
                                     <span class="value">
-                                        ${{$checkref}}
+                                        ${{auth()->user()->balance}}
                                     </span>
                                 </div>
                                 <div class="ml-3 mt-2">

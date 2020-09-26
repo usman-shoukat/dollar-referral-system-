@@ -24,7 +24,8 @@
                     </div><!-- .tm-language -->
                     <div class="tm-menu-meta">
                        <a href="{{route('login')}}"> <button class="tm-btn tm-style1 tm-with-border" >LOGIN</button></a>
-                          <button class="tm-btn tm-style1 tm-with-border" data-toggle="modal" data-target="#tm-login">REGISTER</button>
+
+                        <a href="{{route('register')}}"> <button class="tm-btn tm-style1 tm-with-border" >REGISTER</button></a>
                     </div>
                 </nav>
             </div><!-- .tm-header-menu-container -->

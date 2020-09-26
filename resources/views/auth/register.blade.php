@@ -12,13 +12,12 @@
         <div class="my-auto page page-h">
             <div class="main-signin-wrapper">
                 <div class="main-card-signin d-md-flex wd-100p">
-                <div class="wd-md-50p login d-none d-md-block page-signin-style p-5 text-white" >
+                  <div class="wd-md-50p login  p-5 " >
                     <div class="my-auto authentication-pages">
                         <div>
-                            <img src="home/assets/img/brand/logo-white.png" class=" m-0 mb-4" alt="logo">
-                            <h5 class="mb-4">Responsive Modern Dashboard &amp; home Template</h5>
-                            <p class="mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
-                            <a href="index.html" class="btn btn-success">Learn More</a>
+                            <img src="home/assets/img/brand/favicon-white.png" class=" m-0 mb-4" alt="logo">
+                            
+                           
                         </div>
                     </div>
                 </div>

@@ -161,7 +161,8 @@
                             <td>Heaven</td>
                             <td>{{$getalladmins->user->created_at}}</td>
                             <td>7.5$</td>
-                            @if ($getalladmins->user->oceanpack == 1)
+                            
+                            @if ($getalladmins->user->heavenpack == 1)
                                 <td> <button class="btn-success" style="margin-left: 0px; "  type="submit" name="submit">Received
                             @else
                               <td> <button class="btn-danger" style="margin-left: 0px;"  type="submit" name="submit">Pending</button></td>

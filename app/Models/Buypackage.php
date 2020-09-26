@@ -11,6 +11,12 @@ class Buypackage extends Model
 
 
     protected $fillable = [
-        'user_id', 'PackageName', 'Packageprice','platform','Transactionid','app','del',
+        'user_id', 'PackageName', 'Packageprice','platform','Transactionid','app','del','ref_pack',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id','id');
+    }
+    
 }

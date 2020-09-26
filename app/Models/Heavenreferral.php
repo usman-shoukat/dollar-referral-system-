@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Heavenreferral extends Model
 {
     use HasFactory;
-      protected $fillable = ['user_id', 'referred_by_id', 'position'];
+      protected $fillable = ['user_id', 'referred_by_id', 'ref_o', 'ref_s', 'ref_h'];
 
     /**
      * @return BelongsTo

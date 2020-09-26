@@ -127,10 +127,10 @@
 				
 				<div class="row row-sm">
 				
-					
+					<!-- 
 					<div class="col-sm-12 col-lg-12">
 						<iframe width="100%" height="315" src="https://www.youtube.com/embed/WVVMMPVUUxY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
+				</div> -->
 
 				</div>
 				<!-- /row -->
@@ -144,22 +144,12 @@
 							<div class="card-body">
 								<div class="row">
 									<div class="col-md-12">
-										<div class="">Payeer</div>
-										<div class="h3 mt-2 mb-2"><b>$2.98M</b><span class="text-success tx-13 ml-2">(+35%)</span></div>
+								<img class="img-fluid" style="width: 100%;" src="home/assets/img/banner/banner.jpg">
+
 									</div>
-									<div class="col-auto align-self-center ">
-										<div class="feature mt-0 mb-0">
-											<i class="ti-bar-chart-alt project bg-success-transparent text-success "></i>
-										</div>
-									</div>
+									
 								</div>
-								<div class="">
-									<p class="mb-1">Overview of Last month</p>
-									<div class="progress progress-sm h-1 mb-1">
-										<div class="progress-bar bg-success wd-25 " role="progressbar"></div>
-									</div>
-									<small class="mb-0 text-muted">Monthly<span class="float-right text-muted">25%</span></small>
-								</div>
+								
 							</div>
 						</div>
 					</div>

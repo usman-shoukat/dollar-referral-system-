@@ -58,23 +58,7 @@ class UserReferralController extends Controller
     {
                  $urlid = $ref;
 
-    $checkref = Package::where(['user_id' => $urlid ])->first();
-    $checkocean = $checkref->ocean;
-    if ($checkocean == 0) {
-
-    $addapp = User::where('id',$urlid)->first();
-    $checkpreis_admin = $addapp->is_admin;
-
-        if ($checkpreis_admin == 0) {
-        $addapp = User::where('id',$urlid)->update(['is_admin' => 1]);
-        }
-        if ($checkpreis_admin == 1) {
-        $addapp = User::where('id',$urlid)->update(['is_admin' => 2]);
-        }
-          return redirect()->route('oceanreferral',['ref'=> $urlid])->with(['delete' => true, 'message' => 'Your Referral Link is not match with our records']);
-        
-    }
-   
+    
 
         $userref = User::where(['id' => $urlid ])->first();
 
@@ -91,7 +75,9 @@ class UserReferralController extends Controller
      $createdUser = $this->user->create($userData);
 
      if ($userref) {
-         $this->userreferral->create(['user_id' => $createdUser->id, 'referred_by_id' => $urlid]);
+
+$this->userreferral->create(['user_id' => $createdUser->id, 'referred_by_id' => $urlid, 'pack_name' => 'ocean', 'ref_o' => 1, 'ref' => 1]);
+         
      }
      return redirect()->route('login');
         }
@@ -110,22 +96,6 @@ class UserReferralController extends Controller
     {
          $urlid = $ref;
 
-    $checkref = Package::where(['user_id' => $urlid ])->first();
-    $checkocean = $checkref->ocean;
-    if ($checkocean == 0) {
-
-    $addapp = User::where('id',$urlid)->first();
-    $checkpreis_admin = $addapp->is_admin;
-
-        if ($checkpreis_admin == 0) {
-        $addapp = User::where('id',$urlid)->update(['is_admin' => 1]);
-        }
-        if ($checkpreis_admin == 1) {
-        $addapp = User::where('id',$urlid)->update(['is_admin' => 2]);
-        }
-          return redirect()->route('oceanreferral',['ref'=> $urlid])->with(['delete' => true, 'message' => 'Your Referral Link is not match with our records']);
-        
-    }
         $userref = User::where(['id' => $urlid ])->first();
 
 
@@ -141,7 +111,7 @@ class UserReferralController extends Controller
      $createdUser = $this->user->create($userData);
 
      if ($userref) {
-         $this->skyreferral->create(['user_id' => $createdUser->id, 'referred_by_id' => $urlid]);
+         $this->userreferral->create(['user_id' => $createdUser->id, 'referred_by_id' => $urlid,  'pack_name' => 'sky', 'ref_o' => 1, 'ref_s' => 1, 'ref' => 1]);
      }
      return redirect()->route('login');
         }

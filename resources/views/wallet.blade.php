@@ -213,7 +213,7 @@
 									<i class="ti-bar-chart project bg-primary-transparent mx-auto text-primary "></i>
 								</div>
 								<h6 class="mb-1 text-muted">Total Ocean Revenue</h6>
-								<h3 class="font-weight-semibold">$125.465</h3>
+								<h3 class="font-weight-semibold">${{$userReferral * 3.5 }}</h3>
 							</div>
 						</div>
 					</div>
@@ -224,7 +224,7 @@
 									<i class="ti-pie-chart project bg-pink-transparent mx-auto text-pink "></i>
 								</div>
 								<h6 class="mb-1 text-muted">Total Sky Revenue</h6>
-								<h3 class="font-weight-semibold">$75.045</h3>
+								<h3 class="font-weight-semibold">${{$skrref * 5.5 }}</h3>
 							</div>
 						</div>
 					</div>
@@ -235,7 +235,7 @@
 									<i class="ti-pulse  project bg-teal-transparent mx-auto text-teal "></i>
 								</div>
 								<h6 class="mb-1 text-muted">Total Heaven Revenue</h6>
-								<h3 class="font-weight-semibold">$46.352</h3>
+								<h3 class="font-weight-semibold">${{$heavenreferral * 7.5}}</h3>
 							</div>
 						</div>
 					</div>
@@ -245,8 +245,8 @@
 								<div class="feature widget-2 text-center mt-0 mb-3">
 									<i class="ti-stats-up project bg-success-transparent mx-auto text-success "></i>
 								</div>
-								<h6 class="mb-1 text-muted">Total Investiment</h6>
-								<h3 class="font-weight-semibold">$62</h3>
+								<h6 class="mb-1 text-muted">Total Withdraw Amount</h6>
+								<h3 class="font-weight-semibold">${{$withdrawapp}}</h3>
 							</div>
 						</div>
 					</div>

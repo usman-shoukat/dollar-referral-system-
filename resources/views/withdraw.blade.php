@@ -295,8 +295,13 @@
 								<input type="checkbox" >
 								<span class="tx-13">Recheck Your Perfect Money User Id.</span>
 							</label>
-						</div>	</div><!-- form-group -->
+						</div>	</div>
+						<!-- form-group -->
+						@if(auth()->user()->balance >= 3.5)
 						<button type="submit" class="btn btn-primary btn-block">Apply Withdraw</button>
+						@else
+						<button  disabled class="btn btn-primary btn-block">Apply Withdraw</button>
+						@endif
 						</form>
 					</div><!-- modal-body -->
 				</div><!-- modal-content -->
@@ -331,8 +336,12 @@
 								<span class="tx-13">Recheck Your Bitcoin Address.</span>
 							</label>
 						</div>	</div><!-- form-group -->
+						
+	@if(auth()->user()->balance >= 3.5)
 						<button type="submit" class="btn btn-primary btn-block">Apply Withdraw</button>
-						</form>
+						@else
+						<button  disabled class="btn btn-primary btn-block">Apply Withdraw</button>
+						@endif						</form>
 					</div><!-- modal-body -->
 				</div><!-- modal-content -->
 			</div><!-- modal-dialog -->
@@ -367,8 +376,11 @@
 								<span class="tx-13">Recheck Your AdvCash Email.</span>
 							</label>
 						</div>	</div><!-- form-group -->
+	@if(auth()->user()->balance >= 3.5)
 						<button type="submit" class="btn btn-primary btn-block">Apply Withdraw</button>
-						</form>
+						@else
+						<button  disabled class="btn btn-primary btn-block">Apply Withdraw</button>
+						@endif						</form>
 					</div><!-- modal-body -->
 				</div><!-- modal-content -->
 			</div><!-- modal-dialog -->
@@ -404,8 +416,11 @@
 								<span class="tx-13">Recheck Your Cash Maal Email.</span>
 							</label>
 						</div>	</div><!-- form-group -->
+	@if(auth()->user()->balance >= 3.5)
 						<button type="submit" class="btn btn-primary btn-block">Apply Withdraw</button>
-						</form>
+						@else
+						<button  disabled class="btn btn-primary btn-block">Apply Withdraw</button>
+						@endif						</form>
 					</div><!-- modal-body -->
 				</div><!-- modal-content -->
 			</div><!-- modal-dialog -->
@@ -443,8 +458,11 @@
 								<span class="tx-13">Recheck Your JazzCash phone.</span>
 							</label>
 						</div>	</div><!-- form-group -->
+	@if(auth()->user()->balance >= 3.5)
 						<button type="submit" class="btn btn-primary btn-block">Apply Withdraw</button>
-						</form>
+						@else
+						<button  disabled class="btn btn-primary btn-block">Apply Withdraw</button>
+						@endif						</form>
 					</div><!-- modal-body -->
 				</div><!-- modal-content -->
 			</div><!-- modal-dialog -->
@@ -483,8 +501,11 @@
 								<span class="tx-13">Recheck Your Easypaisa phone.</span>
 							</label>
 						</div>	</div><!-- form-group -->
+	@if(auth()->user()->balance >= 3.5)
 						<button type="submit" class="btn btn-primary btn-block">Apply Withdraw</button>
-						</form>
+						@else
+						<button  disabled class="btn btn-primary btn-block">Apply Withdraw</button>
+						@endif						</form>
 					</div><!-- modal-body -->
 				</div><!-- modal-content -->
 			</div><!-- modal-dialog -->
@@ -519,8 +540,11 @@
 								<span class="tx-13">Recheck Your Skrill Email.</span>
 							</label>
 						</div>	</div><!-- form-group -->
+	@if(auth()->user()->balance >= 3.5)
 						<button type="submit" class="btn btn-primary btn-block">Apply Withdraw</button>
-						</form>
+						@else
+						<button  disabled class="btn btn-primary btn-block">Apply Withdraw</button>
+						@endif						</form>
 					</div><!-- modal-body -->
 				</div><!-- modal-content -->
 			</div><!-- modal-dialog -->
@@ -557,8 +581,11 @@
 								<span class="tx-13">Recheck YOur Payeer Email.</span>
 							</label>
 						</div>	</div><!-- form-group -->
-						<button type="submit" class="btn btn-primary btn-block">Aplly withdraw</button>
-						</form>
+	@if(auth()->user()->balance >= 3.5)
+						<button type="submit" class="btn btn-primary btn-block">Apply Withdraw</button>
+						@else
+						<button  disabled class="btn btn-primary btn-block">Apply Withdraw</button>
+						@endif						</form>
 					</div><!-- modal-body -->
 				</div><!-- modal-content -->
 			</div><!-- modal-dialog -->

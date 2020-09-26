@@ -2,7 +2,7 @@
 <x-adminlinkbar/>
     <!-- left sidebar -->
     <!-- ============================================================== -->
-<x-adminsidebar/>
+<x-pxadminsidebar/>
     <!-- ============================================================== -->
     <!-- end left sidebar -->
 
@@ -16,7 +16,7 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="page-header">
-                            <h2 class="pageheader-title">GotJobPak Dashboard  </h2>
+                            <h2 class="pageheader-title">PX dollar Dashboard  </h2>
                             <p class="pageheader-text"></p>
                             <div class="page-breadcrumb">
                                 <nav aria-label="breadcrumb">
@@ -40,7 +40,7 @@
                                 <div class="card-body">
                                     <h5 class="text-muted">Total Business</h5>
                                     <div class="metric-value d-inline-block">
-                                        <h1 class="mb-1">${{$totalbusinesscount}}</h1>
+                                        <h1 class="mb-1">$</h1>
                                     </div>
                                     <div class="metric-label d-inline-block float-right text-success font-weight-bold">
 
@@ -54,7 +54,7 @@
                                 <div class="card-body">
                                     <h5 class="text-muted">Total Withdraw Amount</h5>
                                     <div class="metric-value d-inline-block">
-                                        <h1 class="mb-1">${{$totalwithdarw}}</h1>
+                                        <h1 class="mb-1">$</h1>
                                     </div>
                                     <div class="metric-label d-inline-block float-right text-success font-weight-bold">
 
@@ -68,8 +68,8 @@
                                 <div class="card-body">
                                     <h5 class="text-muted">Total Approval User</h5>
                                     <div class="metric-value d-inline-block">
-                                        <h1 class="mb-1">{{$getallappuser}}</h1>
-                                        <small>Non Approval User : {{$getalluser}}</small>
+                                        <h1 class="mb-1"></h1>
+                                        <small>Non Approval User :</small>
                                     </div>
                                     <div class="metric-label d-inline-block float-right text-primary font-weight-bold">
 
@@ -100,55 +100,7 @@
 
                         <!-- recent orders  -->
                         <!-- ============================================================== -->
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                            <div class="card">
-                                <h5 class="card-header">All Admin Accounts</h5>
-                                <tr>
-                                    <td colspan="9"><a href="#" data-toggle="modal" data-target="#jazzModal" class="btn btn-outline-light float-right">Click For Add Admin</a></td>
-                                </tr>
-                                <div class="card-body p-0">
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead class="bg-light">
-                                            <tr class="border-0">
-                                                <th class="border-0">Id</th>
-                                                <th class="border-0">Email</th>
-                                                <th class="border-0">Reject</th>
-                                                <th class="border-0">Update</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            @foreach ($getalladmin as $getalladmins)
-                                                <tr>
-                                                    <td>{{$getalladmins->id}}</td>
-                                                    <td>{{$getalladmins->email}}</td>
-                                                    <td>
-                                                        <form  method="post" action="{{ url('/update', [$getalladmins->id]) }}">
-                                                            {{csrf_field()}}
-
-                                                            <button type="submit"  class="btn btn-danger">Reject</button>
-                                                        </form>
-                                                    </td>
-                                                    <td>
-
-
-                                                            <a href="{{ route('update', [$getalladmins->id]) }}"><button type="submit" class="btn btn-success">Update</button></a>
-
-                                                    </td>
-                                                </tr>
-                                            @endforeach
-
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ============================================================== -->
-                        <!-- end recent orders  -->
-
-
-                    </div>
+                      
 
 
 
@@ -159,56 +111,5 @@
                     <!-- ============================================================== -->
                 </div>
 
-<x-adminfooter/>
-                <div class="modal fade" id="jazzModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel"><b>Add Admin Form</b></h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-
-                                <b>Wellcome Here Sir</b>
-<br>
-
-                                <form class="row login_form" method="POST" action="{{ route('makeadmin.store') }}" id="contactForm" novalidate="novalidate">
-                                    @csrf
-
-
-                                    <div class="col-md-12 form-group">
-                                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="email"  required autocomplete="email">
-
-                                        @error('email')
-                                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                        @enderror
-                                    </div>
-                                    <div class="col-md-12 form-group">
-                                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Password"  required autocomplete="new-password">
-
-                                        @error('password')
-                                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                        @enderror
-                                    </div>
-
-
-
-                                    <div class="col-md-12 form-group">
-                                        <button type="submit" value="submit" class="primary-btn">Register</button>
-
-                                    </div>
-
-                                </form>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-                </div>
+<x-pxadminfooter/>
+               

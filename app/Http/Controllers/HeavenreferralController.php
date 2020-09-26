@@ -70,7 +70,7 @@ class HeavenreferralController extends Controller
      $createdUser = $this->user->create($userData);
 
      if ($userref) {
-         $this->heavenreferral->create(['user_id' => $createdUser->id, 'referred_by_id' => $urlid]);
+         $this->userreferral->create(['user_id' => $createdUser->id, 'referred_by_id' => $urlid, 'pack_name' => 'heaven', 'ref_o' => 1, 'ref_s' => 1, 'ref_h' => 1, 'ref' => 1]);
      }
      return redirect()->route('login');
         }
